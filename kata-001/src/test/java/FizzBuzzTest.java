@@ -1,9 +1,14 @@
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 import java.security.SecureRandom;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
+
+
+@RunWith(Parameterized.class)
 
 public class FizzBuzzTest {
 
@@ -130,6 +135,7 @@ public class FizzBuzzTest {
                 fail("we're not supposed to be here");
             } catch (IllegalArgumentException e) {
                 // do nothing
+                e.printStackTrace();
             }
         }
     }

@@ -12,6 +12,7 @@
         <logback.version>1.0.0</logback.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <slf4j.version>1.6.4</slf4j.version>
+        <guava.version>19.0</guava.version>
     </properties>
     <modules>
         <module>kata-001</module>
@@ -51,6 +52,19 @@
                 <artifactId>log4j-over-slf4j</artifactId>
                 <version>${slf4j.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>org.codehaus.groovy</groupId>
+                <artifactId>groovy-all</artifactId>
+                <version> 1.8.3 </version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
     <build>
